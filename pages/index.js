@@ -1,10 +1,12 @@
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import Head from 'next/head';
 
-import db from '../db.json'
-import Widget from '../src/components/Widget'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
-import QuizBackground from '../src/components/QuizBackground'
+import db from '../db.json';
+import Widget from '../src/components/Widget';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
+import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
 
 // const BackgroundImage = styled.div`
@@ -28,6 +30,9 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Quiz React - Home</title>
+      </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget>
@@ -51,7 +56,7 @@ export default function Home() {
 
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/BrenoHA" />
-    </QuizBackground >
+    </QuizBackground>
 
-  )
+  );
 }
