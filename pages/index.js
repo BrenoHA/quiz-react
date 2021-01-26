@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
@@ -28,6 +29,9 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
@@ -37,18 +41,34 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Vingadores</h1>
+            <h1>Star Wars</h1>
           </Widget.Header>
 
           <Widget.Content>
-            <p>Os últimos heróis da terra</p>
+            <form onSubmit={function (infosDoEvento) {
+              infosDoEvento.preventDefault();
+              router.push(`/quiz?name=${name}`);
+              console.log('Submissão por meio do React');
+            }}
+            >
+              <input
+                onChange={function (infosDoEvento) {
+                  setName(infosDoEvento.target.value);
+                }}
+                placeholder="Digite seu nome"
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar
+                {name}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
 
         <Widget>
           <Widget.Content>
-            <h1>Vingadores</h1>
-            <p>Os últimos heróis da terra</p>
+            <h1>Outros Quizes</h1>
+            <p>Lorem ipsum dolar sit amet</p>
           </Widget.Content>
         </Widget>
 
