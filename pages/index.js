@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -6,9 +6,10 @@ import { useRouter } from 'next/router';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
-import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
+import GitHubCorner from '../src/components/GitHubCorner';
+import LinkedinCorner from '../src/components/LinkedinCorner';
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -76,6 +77,7 @@ export default function Home() {
 
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/BrenoHA" />
+      <LinkedinCorner projectUrl="https://www.linkedin.com/in/breno-hasparyk/" />
     </QuizBackground>
 
   );

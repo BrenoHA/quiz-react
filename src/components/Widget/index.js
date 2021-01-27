@@ -7,6 +7,7 @@ const Widget = styled.div`
   background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
   overflow: hidden;
+  filter: drop-shadow(0px 0px 20px rgba(255, 0, 229, 0.30));
   
   h1, h2, h3 {
     font-size: 16px;
