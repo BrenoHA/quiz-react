@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 // eslint-disable-next-line no-unused-vars
 function Logo({ className }) {
   return (
-    <img src="https://i.ibb.co/GVm58R6/logo-Star-Wars.png" alt="Logo Alura" />
+    <img src="https://i.ibb.co/GVm58R6/logo-Star-Wars.png" alt="Logo Quiz" />
   );
 }
 
