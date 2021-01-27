@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>Quiz React - Home</title>
+        <title>Star Wars Quiz - Home</title>
       </Head>
       <QuizContainer>
         <QuizLogo />
