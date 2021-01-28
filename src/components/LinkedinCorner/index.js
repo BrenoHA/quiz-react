@@ -6,7 +6,6 @@ const Wrapper = styled.div`
   bottom: 0;
   border: 0;
   right: 0;
-  z-index: 20;
 `;
 
 const SVGWrapper = styled.svg`

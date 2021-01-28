@@ -37,6 +37,7 @@ export default function Home() {
           </Widget.Header>
 
           <Widget.Content>
+            <p>Teste seu conhecimento sobre a saga Star Wars!</p>
             <form onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
@@ -58,7 +59,7 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1>Outros Quizes</h1>
-            <p>Lorem ipsum dolar sit amet</p>
+            <p>Em breve outros quizes aparecerão aqui 😃</p>
           </Widget.Content>
         </Widget>
 
