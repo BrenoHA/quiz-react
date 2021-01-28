@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  position: absolute;
+  position: fixed;
   bottom: 0;
   border: 0;
   right: 0;
