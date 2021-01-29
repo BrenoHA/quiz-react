@@ -26,7 +26,7 @@ const Button = styled.button`
 `;
 
 Button.propTypes = {
-  type: PropTypes.oneOf(['submit', 'type', 'button']).isRequired,
+  type: PropTypes.oneOf(['submit', 'type', 'button', 'href']).isRequired,
   children: PropTypes.node.isRequired,
 };
 

@@ -1,6 +1,7 @@
 /* eslint-disable indent */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { useRouter } from 'next/router';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
@@ -14,6 +15,7 @@ import AlternativeForm from '../src/components/AlternativeForm';
 import Loading from '../src/components/Loading';
 
 function ResultWidget({ results }) {
+  const router = useRouter();
   return (
     <Widget>
       <Widget.Header>
@@ -47,6 +49,21 @@ function ResultWidget({ results }) {
 
           ))}
         </ul>
+
+        {/* <Button href="/quiz">
+          Jogar novamente
+        </Button> */}
+
+        <form onSubmit={function (infosDoEvento) {
+          infosDoEvento.preventDefault();
+          router.push('/');
+        }}
+        >
+          <Button type="submit">
+            Jogar de novo
+          </Button>
+        </form>
+
       </Widget.Content>
     </Widget>
   );
