@@ -4,25 +4,75 @@
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://64.media.tumblr.com/b33d45b999dedbb12216fc323eb1f8cc/tumblr_p9s1rfJVcD1wzvt9qo1_500.gifv",
+      "title": "Qual foi a ano que foi lançado o primeiro filme de Star Wars?",
+      "description": "Você já era nascido?",
+      "answer": 0,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "1977",
+        "1981",
+        "1968",
+        "1975"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr02/16/1/anigif_enhanced-buzz-29664-1381902619-14.gif",
+      "title": "Em qual filme Qui-Gon Jinn morreu?",
+      "description": "Qui-Gon Jinn treinou Obi-Wan Kenobi!",
+      "answer": 2,
+      "alternatives": [
+        "O Retorno de Jedi - VI",
+        "O Império contra-ataca - V",
+        "A Ameaça Fantasma - I",
+        "O Ataque dos Clones - II"
+      ]
+    },
+    {
+      "image": "https://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr05/16/1/anigif_enhanced-buzz-28927-1381902632-20.gif",
+      "title": "Quem cortou as pernas de Anakin Skywalker?",
+      "description": "👀",
       "answer": 0,
       "alternatives": [
-        "background: linear-gradient(#e66465, #9198e5);",
-        "background: gradient(#e66465, #9198e5);"
+        "Obi-Wan Kenobi",
+        "Luke Skywalker",
+        "Yoda",
+        "Han Solo"
+      ]
+    },
+    {
+      "image": "https://64.media.tumblr.com/6244343698c8e15b096f74d10bf9a894/tumblr_msyn3tKYk81qbk7lno4_r1_250.gif",
+      "title": "Luke e Leia são",
+      "description": "👀",
+      "answer": 3,
+      "alternatives": [
+        "Primos",
+        "Namorados",
+        "Amigos",
+        "Irmãos"
+      ]
+    },
+    {
+      "image": "https://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr06/16/21/anigif_enhanced-buzz-19391-1381973847-18.gif",
+      "title": "Qual a raça desse personagem?",
+      "description": "Eles costumam viver em cabanas em copas de árvores",
+      "answer": 2,
+      "alternatives": [
+        "Owoke",
+        "Tobby",
+        "Ewok",
+        "Wookiee"
+      ]
+    },
+    {
+      "image": "https://i.chzbgr.com/full/9031980800/h2ECD7C3E/funny-star-wars-gif-of-darth-vader-riding-a-carousel",
+      "title": "Qual data é sempre lembrada pelos fãs de Star Wars?",
+      "description": "👀",
+      "answer": 1,
+      "alternatives": [
+        "4 de Março",
+        "4 de Maio",
+        "8 de Maio",
+        "8 de Março"
       ]
     }
   ],
