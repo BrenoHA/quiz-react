@@ -3,16 +3,16 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import GitHubCorner from '../src/components/GitHubCorner';
-import LinkedinCorner from '../src/components/LinkedinCorner';
-import QuizLogo from '../src/components/QuizLogo';
-import Button from '../src/components/Button';
-import AlternativeForm from '../src/components/AlternativeForm';
-import Loading from '../src/components/Loading';
+import db from '../../db.json';
+import Widget from '../../src/components/Widget';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import GitHubCorner from '../../src/components/GitHubCorner';
+import LinkedinCorner from '../../src/components/LinkedinCorner';
+import QuizLogo from '../../src/components/QuizLogo';
+import Button from '../../src/components/Button';
+import AlternativeForm from '../../src/components/AlternativeForm';
+import Loading from '../../src/components/Loading';
 
 function ResultWidget({ results }) {
   const router = useRouter();
@@ -139,6 +139,7 @@ function QuestionWidget({
                   name={questionId}
                   onChange={() => setSelectedAlternative(alternativeIndex)}
                   type="radio"
+                  checked={selectedAlternative === alternativeIndex}
                 />
                 {alternative}
               </Widget.Topic>

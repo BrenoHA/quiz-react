@@ -7,3 +7,10 @@ export default function QuizDaGaleraPage() {
     </div>
   );
 }
+
+export async function getServerSideProps(context) {
+  console.log(context);
+  return {
+    props: {},
+  };
+}
