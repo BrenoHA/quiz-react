@@ -11,6 +11,7 @@ import LinkedinCorner from '../src/components/LinkedinCorner';
 import QuizLogo from '../src/components/QuizLogo';
 import Button from '../src/components/Button';
 import AlternativeForm from '../src/components/AlternativeForm';
+import Loading from '../src/components/Loading';
 
 function ResultWidget({ results }) {
   return (
@@ -46,20 +47,6 @@ function ResultWidget({ results }) {
 
           ))}
         </ul>
-      </Widget.Content>
-    </Widget>
-  );
-}
-
-function LoadingWidget() {
-  return (
-    <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
-
-      <Widget.Content>
-        [Desafio do Loading]
       </Widget.Content>
     </Widget>
   );
@@ -214,7 +201,7 @@ export default function QuizPage() {
           />
         )}
 
-        {screenState === screenStates.LOADING && <LoadingWidget />}
+        {screenState === screenStates.LOADING && <Loading />}
         {screenState === screenStates.RESULT && <ResultWidget results={results} />}
 
       </QuizContainer>
