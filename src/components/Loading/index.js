@@ -11,8 +11,11 @@ export default function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>
-        <LoadingAnimation type="cylon" color="#ffffff" />
+        <h1>Carregando Quiz</h1>
       </Widget.Header>
+      <Widget.Content>
+        <LoadingAnimation type="cylon" color="#ffffff" />
+      </Widget.Content>
 
     </Widget>
   );
