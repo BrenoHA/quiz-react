@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
+import Link from '../src/components/Link';
 import Footer from '../src/components/Footer';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
@@ -69,7 +70,8 @@ export default function Home() {
                 return (
                   <li key={linkExterno}>
                     <Widget.Topic
-                      href={linkExterno}
+                      as={Link}
+                      href={`/quiz/${projectName}___${githubUser}`}
                     >
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>
