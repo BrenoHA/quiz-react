@@ -1,11 +1,7 @@
 import React from 'react';
-import ReactLoading from 'react-loading';
+import { Lottie } from '@crello/react-lottie';
 import Widget from '../Widget';
-
-// eslint-disable-next-line react/prop-types
-const LoadingAnimation = ({ type, color }) => (
-  <ReactLoading type={type} color={color} height="20%" width="18%" />
-);
+import loadingAnimation from '../../screens/Quiz/animations/3010-bb8.json';
 
 export default function LoadingWidget() {
   return (
@@ -13,8 +9,13 @@ export default function LoadingWidget() {
       <Widget.Header>
         <h1>Carregando Quiz</h1>
       </Widget.Header>
-      <Widget.Content>
-        <LoadingAnimation type="cylon" color="#ffffff" />
+      <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
+        <Lottie
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
+        />
       </Widget.Content>
 
     </Widget>

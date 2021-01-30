@@ -192,7 +192,7 @@ export default function QuizPage() {
     // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 1000);
+    }, 2.5 * 1000);
     // nasce === didMount
   }, []);
 
