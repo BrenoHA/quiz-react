@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { useRouter } from 'next/router';
+import { Lottie } from '@crello/react-lottie';
 
 import db from '../../db.json';
 import Widget from '../../src/components/Widget';
@@ -14,6 +15,36 @@ import Button from '../../src/components/Button';
 import AlternativeForm from '../../src/components/AlternativeForm';
 import Loading from '../../src/components/Loading';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
+import correct from '../../src/screens/Quiz/animations/6518-correct-check-animation.json';
+import inCorrect from '../../src/screens/Quiz/animations/6973-incorrect-failed.json';
+
+function Correct() {
+  return (
+    <span style={{ display: 'flex', justifyContent: 'center' }}>
+      <Lottie
+        width="40px"
+        height="40px"
+        className="lottie-container basic"
+        config={{ animationData: correct, loop: true, autoplay: true }}
+      />
+      <p>Acertou!</p>
+    </span>
+  );
+}
+
+function InCorrect() {
+  return (
+    <span style={{ display: 'flex', justifyContent: 'center' }}>
+      <Lottie
+        width="40px"
+        height="40px"
+        className="lottie-container basic"
+        config={{ animationData: inCorrect, loop: true, autoplay: true }}
+      />
+      <p>Errou!</p>
+    </span>
+  );
+}
 
 function ResultWidget({ results }) {
   const router = useRouter();
@@ -155,8 +186,8 @@ function QuestionWidget({
             Confirmar
           </Button>
 
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          {isQuestionSubmited && isCorrect && <Correct />}
+          {isQuestionSubmited && !isCorrect && <InCorrect />}
 
         </AlternativeForm>
       </Widget.Content>
