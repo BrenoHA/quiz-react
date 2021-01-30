@@ -20,7 +20,7 @@ const Button = styled.button`
     opacity: .5;
   }
   &:disabled {
-    background-color: #979797;
+    background-color: #453749;
     cursor: not-allowed;
   }
 `;

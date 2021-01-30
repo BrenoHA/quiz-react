@@ -61,7 +61,7 @@ Widget.Topic = styled.a`
   
   &:hover,
   &:focus {
-    opacity: .5;
+    opacity: .3;
   }
 `;
 

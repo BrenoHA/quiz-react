@@ -51,29 +51,24 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        Resultado
+        Você acertou
+        {' '}
+        {results.filter((x) => x).length}
+        {' '}
+        de
+        {' '}
+        6 perguntas
       </Widget.Header>
 
       <Widget.Content>
         <p>
-          Você acertou
-          {' '}
-          {results.filter((x) => x).length}
-          {/* {results.reduce((somatoriaAtual, resultadoAtual) => {
-            const isAcerto = resultadoAtual === true;
-            if (isAcerto) {
-              return somatoriaAtual + 1;
-            }
-            return somatoriaAtual;
-          }, 0)} */}
-          {' '}
-          perguntas
+          Resultado:
         </p>
         <ul>
           {results.map((result, index) => (
-            <li key={`result__${result}`}>
-              #
+            <li style={{ marginTop: '10px' }} key={`result__${result}`}>
               {index + 1}
+              ª
               {' '}
               Pergunta:
               {result === true ? ' Acertou!' : ' Errou!'}
