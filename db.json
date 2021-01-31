@@ -102,7 +102,8 @@
   ],
   "external": [
     "https://aluraquiz-css.omariosouto.vercel.app/",
-    "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
+    "https://aluraquiz-base.gii-pan.vercel.app/",
+    "https://quiz.dgsdev.vercel.app/"
   ],
   "theme": {
     "colors": {
