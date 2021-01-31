@@ -41,19 +41,19 @@ export default function App({ Component, pageProps }) {
 
         <title>Star Wars Quiz</title>
         <meta name="title" content="Star Wars Quiz" />
-        <meta name="description" content="Quiz baseado nos 6 primeiros filmes da saga Star Wars - por Breno Hasparyk Andrade" />
+        <meta name="description" content="Quiz baseado na saga de filmes Star Wars - por Breno Hasparyk Andrade" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://quiz-react.brenoha.vercel.app/" />
         <meta property="og:title" content="Star Wars Quiz" />
-        <meta property="og:description" content="Quiz baseado nos 6 primeiros filmes da saga Star Wars - por Breno Hasparyk Andrade" />
+        <meta property="og:description" content="Quiz baseado na saga de filmes Star Wars - por Breno Hasparyk Andrade" />
         <meta property="og:image" content="https://i.ibb.co/w65bx0W/Frame-1.png" />
         <meta property="og:image:type" content="image/png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://quiz-react.brenoha.vercel.app/" />
         <meta property="twitter:title" content="Star Wars Quiz" />
-        <meta property="twitter:description" content="Quiz baseado nos 6 primeiros filmes da saga Star Wars - por Breno Hasparyk Andrade" />
+        <meta property="twitter:description" content="Quiz baseado na saga de filmes Star Wars - por Breno Hasparyk Andrade" />
         <meta property="twitter:image" content="https://i.ibb.co/w65bx0W/Frame-1.png" />
 
       </Head>

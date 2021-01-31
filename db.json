@@ -5,7 +5,7 @@
   "questions": [
     {
       "image": "https://64.media.tumblr.com/b33d45b999dedbb12216fc323eb1f8cc/tumblr_p9s1rfJVcD1wzvt9qo1_500.gifv",
-      "title": "Qual foi a ano que foi lançado o primeiro filme de Star Wars?",
+      "title": "Em que ano foi lançado o primeiro filme de Star Wars?",
       "description": "Você já era nascido?",
       "answer": 0,
       "alternatives": [
@@ -13,6 +13,30 @@
         "1981",
         "1968",
         "1975"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/l3fZGpYGcl9ty1pe0/giphy.gif",
+      "title": "Qual o nome desse personagem?",
+      "description": "Ele representou seu povo no Senado Galáctico",
+      "answer": 0,
+      "alternatives": [
+        "Jar jar Binks",
+        "Ja ja Brinks",
+        "Ya ya Binks",
+        "Ia ia Binks"
+      ]
+    },
+    {
+      "image": "https://media1.tenor.com/images/b071c05c598347af479e37924a10a34f/tenor.gif",
+      "title": "Qual a cor do sabre de luz do Obi-Wan Kenobi?",
+      "description": "Só existe uma pessoa na saga com o Sabre Roxo!",
+      "answer": 1,
+      "alternatives": [
+        "Verde",
+        "Azul",
+        "Roxo",
+        "Branco"
       ]
     },
     {

@@ -57,13 +57,13 @@ function ResultWidget({ results }) {
         {' '}
         de
         {' '}
-        6 perguntas
+        8 perguntas
       </Widget.Header>
 
       <Widget.Content>
-        <p>
+        <h2>
           Resultado:
-        </p>
+        </h2>
         <ul>
           {results.map((result, index) => (
             <li style={{ marginTop: '10px' }} key={`result__${result}`}>
