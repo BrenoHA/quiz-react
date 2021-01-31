@@ -76,7 +76,7 @@ function ResultWidget({ results }) {
               {index + 1}
               {' '}
               Pergunta:
-              {result === true ? ' Acertou!' : ' Errou!'}
+              {result === true ? ' ✅' : ' ❌'}
             </li>
 
           ))}

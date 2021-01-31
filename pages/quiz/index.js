@@ -20,28 +20,26 @@ import inCorrect from '../../src/screens/Quiz/animations/6973-incorrect-failed.j
 
 function Correct() {
   return (
-    <span style={{ display: 'flex', justifyContent: 'center' }}>
+    <span style={{ margin: '5px', display: 'flex', justifyContent: 'center' }}>
       <Lottie
-        width="40px"
-        height="40px"
+        width="60px"
+        height="60px"
         className="lottie-container basic"
         config={{ animationData: correct, loop: true, autoplay: true }}
       />
-      <p>Acertou!</p>
     </span>
   );
 }
 
 function InCorrect() {
   return (
-    <span style={{ display: 'flex', justifyContent: 'center' }}>
+    <span style={{ margin: '5px', display: 'flex', justifyContent: 'center' }}>
       <Lottie
-        width="40px"
-        height="40px"
+        width="60px"
+        height="60px"
         className="lottie-container basic"
         config={{ animationData: inCorrect, loop: true, autoplay: true }}
       />
-      <p>Errou!</p>
     </span>
   );
 }
@@ -61,6 +59,15 @@ function ResultWidget({ results }) {
       </Widget.Header>
 
       <Widget.Content>
+        <img
+          alt="Parabéns!"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+          src="https://s2.glbimg.com/TM5gxnbemh7zvJt20Z7gN1xMc7o=/smart/e.glbimg.com/og/ed/f/original/2016/09/26/tumblr_o5fiynvcm41rlapeio1_540.gif"
+        />
         <h2>
           Resultado:
         </h2>
@@ -76,7 +83,6 @@ function ResultWidget({ results }) {
 
           ))}
         </ul>
-
         {/* <Button href="/quiz">
           Jogar novamente
         </Button> */}
