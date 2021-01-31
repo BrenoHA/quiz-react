@@ -96,12 +96,15 @@ function ResultWidget({ results }) {
             Jogar de novo
           </Button>
         </form>
-
+        <br />
+        <h3>
+          Conheça mais sobre o criador desse Quiz:
+        </h3>
+        <a rel="stylesheet" href="https://www.linkedin.com/in/breno-hasparyk/">linkedin.com/in/breno-hasparyk</a>
       </Widget.Content>
     </Widget>
   );
 }
-
 function QuestionWidget({
   question,
   questionIndex,
